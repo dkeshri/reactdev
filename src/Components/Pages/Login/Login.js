@@ -52,7 +52,7 @@ export default function Login() {
     <div className="boxPosition box">
       <div className="content">
         <img style={style.img} src={require('../../../assets/img/logo.png')} />
-        <h1 style={{ color: "lightgrey" }}>Sign In</h1>
+        <h1 id="signLabel">Sign In</h1>
         <form className={classes.form} noValidate>
           <TextField
             variant="outlined"
@@ -65,6 +65,7 @@ export default function Login() {
             autoComplete="email"
             autoFocus
             onChange={onUserNameChange}
+            size="small"
           />
           <TextField
             variant="outlined"
@@ -77,6 +78,7 @@ export default function Login() {
             id="password"
             autoComplete="current-password"
             onChange={onPasswordChange}
+            size="small"
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
@@ -92,20 +94,16 @@ export default function Login() {
           >
             Sign In
                         </Button>
-          <Grid container style={{ marginLeft: '-15px' }}>
-            <Grid item xs>
-              <Link href="#" variant="body2">
-                Forgot password?
+          <div className="loginSetup">
+            <Link className="link" href="#" variant="body2">
+              Forgot password?
                                  </Link>
-            </Grid>
-            <Grid item>
-              <Link href="#" variant="body2">
-                {"Don't have an account? Sign Up"}
-              </Link>
-            </Grid>
-          </Grid>
+            <Link className="link" href="#" variant="body2">
+              {"Don't have an account? Sign Up"}
+            </Link>
+          </div>
         </form>
-        <Box mt={5}>
+        <Box mt={4}>
           <Copyright />
         </Box>
       </div>

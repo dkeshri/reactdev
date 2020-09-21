@@ -16,7 +16,7 @@ body{
     0 100px 80px rgba(0, 0, 0, 0.12);
     background: white;
     border-radius: 5px;
-    max-width: 440px;
+    max-width: 430px;
   }
 .boxPosition{
     position: absolute;
@@ -27,4 +27,10 @@ body{
     display: flex;
     text-align: center; /* need to center the text element in the box*/
     padding: 25px;
+}
+#signLabel{
+    color: rgb(184, 178, 178);
+}
+.link{
+    padding: 0 10px;
 }
