@@ -98,7 +98,7 @@ export default function Login() {
             <Link className="link" href="#" variant="body2">
               Forgot password?
                                  </Link>
-            <Link className="link" href="#" variant="body2">
+            <Link className="link" href="/reactdev/home" variant="body2">
               {"Don't have an account? Sign Up"}
             </Link>
           </div>
