@@ -5,7 +5,7 @@ import Login from './Components/Pages/Login/Login'
 import Login1 from './Components/Pages/Login/Login1'
 function AppRouter() {
     return (
-        <Router>
+        <Router basename="/reactdev">
             <Switch>
                 <Route path="/" exact component={Login}/>
                 <Route path="/Login" exact component={Login}/>
