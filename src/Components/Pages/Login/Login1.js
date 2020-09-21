@@ -1,6 +1,6 @@
 import { Input, Button } from '@material-ui/core'
 import React from 'react'
-import '../../../assets/css/Login1.css'
+import '../../../assets/css/Login.css'
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';

@@ -1,6 +1,6 @@
 import { Input, Button } from '@material-ui/core'
 import React, { useState, useEffect } from 'react'
-import '../../../assets/css/Login1.css'
+import '../../../assets/css/Login.css'
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -49,67 +49,65 @@ export default function Login() {
     console.log(userDetails);
   }
   return (
-    <div className="container">
-      <div className="boxPosition box">
-        <div className="content">
-          <img style={style.img} src={require('../../../assets/img/logo.png')} />
-          <h1 style={{ color: "lightgrey" }}>Sign In</h1>
-          <form className={classes.form} noValidate>
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
-              autoFocus
-              onChange={onUserNameChange}
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-              onChange={onPasswordChange}
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
-            <Button
-              //type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.submit}
-              onClick={onSubmit}
-            >
-              Sign In
+    <div className="boxPosition box">
+      <div className="content">
+        <img style={style.img} src={require('../../../assets/img/logo.png')} />
+        <h1 style={{ color: "lightgrey" }}>Sign In</h1>
+        <form className={classes.form} noValidate>
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+            autoFocus
+            onChange={onUserNameChange}
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+            onChange={onPasswordChange}
+          />
+          <FormControlLabel
+            control={<Checkbox value="remember" color="primary" />}
+            label="Remember me"
+          />
+          <Button
+            //type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
+            onClick={onSubmit}
+          >
+            Sign In
                         </Button>
-            <Grid container style={{ marginLeft: '-15px' }}>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
+          <Grid container style={{ marginLeft: '-15px' }}>
+            <Grid item xs>
+              <Link href="#" variant="body2">
+                Forgot password?
                                  </Link>
-              </Grid>
-              <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
             </Grid>
-          </form>
-          <Box mt={5}>
-            <Copyright />
-          </Box>
-        </div>
+            <Grid item>
+              <Link href="#" variant="body2">
+                {"Don't have an account? Sign Up"}
+              </Link>
+            </Grid>
+          </Grid>
+        </form>
+        <Box mt={5}>
+          <Copyright />
+        </Box>
       </div>
     </div>
   )
